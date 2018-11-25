@@ -1,0 +1,119 @@
+.sub-title {
+    color: #888;
+    font-size: 14px;
+    padding: 30px 0 18px 0;
+}
+
+.ant-steps {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ant-steps-item {
+    width: 100%;
+    min-height: 68px;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid red;
+}
+
+.ant-steps-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+}
+
+.ant-steps-item-wait {
+    .ant-steps-icon {
+        background: skyblue;
+    }
+    .ant-steps-item-stateInfo {
+        color: skyblue
+    }
+}
+
+.ant-steps-item-process {
+    .ant-steps-icon {
+        background: green;
+    }
+    .ant-steps-item-stateInfo {
+        color: green
+    }
+}
+
+.ant-steps-item-finish {
+    .ant-steps-icon {
+        background: #666;
+    }
+    .ant-steps-item-stateInfo {
+        color: #666
+    }
+}
+
+.ant-steps-item-error {
+    .ant-steps-icon {
+        background: red;
+    }
+    .ant-steps-item-stateInfo {
+        color: red
+    }
+}
+
+.ant-steps-item-warn {
+    .ant-steps-icon {
+        background: orange;
+    }
+    .ant-steps-item-stateInfo {
+        color: orange
+    }
+}
+
+.ant-steps-item-txt {
+    display: flex;
+    align-items: center;
+}
+
+.ant-steps-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 19px;
+    border: solid 1px blue;
+    border-radius: 30px;
+    color: #444;
+    background: #ccc;
+    margin-right: 15px;
+}
+
+.ant-steps-item-description {
+    border: 1px solid black;
+    margin-left: 35px;
+}
+
+.ant-steps-item-tail::after {
+    /* position: absolute; */
+    /* display: inline-block; */
+    /* top: 0px;
+  left: 6px;
+  content: "";
+  width: 1px;
+  background: blue; */
+    /* border-left-style: dashed; */
+    /* border-left-color: blue; */
+    /* height: 57%; */
+    position: absolute;
+    /* display: inline-block; */
+    top: 0px;
+    left: 6px;
+    content: "";
+    border-left-style: dashed;
+    border-left-color: blue;
+    border-bottom-width: 1px;
+    /* border-left-style: dashed; */
+    /* border-left-color: blue; */
+    height: 100%;
+    transform: translateY(-14%);
+}
